@@ -19,6 +19,11 @@ datagroup: deafult_dg {
   max_cache_age: "24 hour"
 }
 
+datagroup: :abc {
+  sql_trigger: select current_date ;;
+  max_cache_age: "2 hour"
+}
+
 persist_with: dd_default_datagroup
 
 explore: distribution_centers {}
